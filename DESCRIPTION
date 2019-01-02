@@ -7,7 +7,7 @@ Authors@R: c(
     )
 Description: Provides an implementation of incorporating a 'C' routine into
     an 'Rcpp' routine.
-BugReports: https://github.com/r-pkg-examples/rcpp-and-fortran
+BugReports: https://github.com/r-pkg-examples/rcpp-and-c
 Depends: R (>= 3.5.0)
 LinkingTo: 
     Rcpp
