@@ -5,6 +5,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // convolve_from_c
 Rcpp::NumericVector convolve_from_c(const Rcpp::NumericVector& a, const Rcpp::NumericVector& b);
 RcppExport SEXP _cRcpp_convolve_from_c(SEXP aSEXP, SEXP bSEXP) {

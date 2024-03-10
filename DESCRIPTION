@@ -7,14 +7,15 @@ Authors@R: c(
     )
 Description: Provides an implementation of incorporating a 'C' routine into
     an 'Rcpp' routine.
-BugReports: https://github.com/r-pkg-examples/rcpp-and-c
-Depends: R (>= 3.5.0)
+BugReports: https://github.com/coatless-rd-rcpp/rcpp-and-c/issues
+URL: https://github.com/coatless-rd-rcpp/rcpp-and-c, https://rd-rcpp.thecoatlessprofessor.com/rcpp-and-c/
+Depends: R (>= 4.3.0)
 LinkingTo: 
     Rcpp
 Imports: 
-    Rcpp
+    Rcpp (>= 1.0.12)
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)

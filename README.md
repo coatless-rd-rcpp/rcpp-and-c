@@ -1,7 +1,9 @@
 ## Using C Routines inside of Rcpp
 
-[![Travis-CI Build Status](https://travis-ci.org/r-pkg-examples/rcpp-and-c.svg?branch=master)](https://travis-ci.org/r-pkg-examples/rcpp-and-c)
-
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/coatless-rd-rcpp/rcpp-and-c/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/coatless-rd-rcpp/rcpp-and-c/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+  
 The `cRcpp` _R_ package provides an example of implementing and using a
 _C_ routine with _C++_ code through _Rcpp_.
 
@@ -10,8 +12,8 @@ _C_ routine with _C++_ code through _Rcpp_.
 To install the `cRcpp` package, use:
 
 ```r
-if(!requireNamespace("devtools")) install.packages("devtools")
-devtools::install_github("r-pkg-examples/rcpp-and-c")
+if(!requireNamespace("remotes")) install.packages("remotes")
+remotes::install_github("coatless-rd-rcpp/rcpp-and-c")
 ```
 
 To access its contents, load it into _R_ with:

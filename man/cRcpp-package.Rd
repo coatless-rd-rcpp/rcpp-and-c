@@ -6,8 +6,7 @@
 \alias{cRcpp-package}
 \title{cRcpp: Combining a C Routine with Rcpp}
 \description{
-Provides an implementation of incorporating a 'C' routine into
-    an 'Rcpp' routine.
+Provides an implementation of incorporating a 'C' routine into an 'Rcpp' routine.
 }
 \details{
 Disclaimer. Work contained within package is part of an R&D effort to
@@ -17,7 +16,9 @@ used when transferring it into production.
 \seealso{
 Useful links:
 \itemize{
-  \item Report bugs at \url{https://github.com/r-pkg-examples/rcpp-and-fortran}
+  \item \url{https://github.com/coatless-rd-rcpp/rcpp-and-c}
+  \item \url{https://rd-rcpp.thecoatlessprofessor.com/rcpp-and-c/}
+  \item Report bugs at \url{https://github.com/coatless-rd-rcpp/rcpp-and-c/issues}
 }
 
 }
