@@ -25,8 +25,8 @@ library("cRcpp")
 
 ### Implementation Details
 
-The goal of this project is to show how a hand-written *C* routine – one
-that talks to *R* through *R*’s *C* API and the `SEXP` type – can be
+The goal of this project is to show how a hand-written *C* routine (one
+that talks to *R* through *R*’s *C* API and the `SEXP` type) can be
 called from within a *C++* function that is, in turn, exposed to *R*
 with *Rcpp*. The *C* code never has to know that *Rcpp* exists; the
 *C++* layer is responsible for translating *R* objects in and out of the
@@ -115,8 +115,8 @@ The bridge between the *C* routine and *R* is supplied in
 *C++* compiler uses *C* linkage and does not mangle the `convolve_c`
 symbol. The exported function
 [`convolve_from_c()`](https://rd-rcpp.thecoatlessprofessor.com/rcpp-and-c/reference/convolve_from_c.md)
-passes its `Rcpp::NumericVector` arguments straight to `convolve_c()` –
-they convert implicitly to `SEXP` – and then wraps the returned `SEXP`
+passes its `Rcpp::NumericVector` arguments straight to `convolve_c()`
+(they convert implicitly to `SEXP`) and then wraps the returned `SEXP`
 back into an `Rcpp::NumericVector`. The `// [[Rcpp::export]]` attribute
 is what tells *Rcpp* to generate the *R*-level binding.
 
