@@ -11,9 +11,9 @@ _C_ routine with _C++_ code through _Rcpp_.
 
 To install the package, you must first have a compiler on your system that is
 compatible with R. For help on obtaining a compiler consult either
-[macOS](http://thecoatlessprofessor.com/programming/r-compiler-tools-for-rcpp-on-os-x/)
+[macOS][compiler-macos]
 or
-[Windows](http://thecoatlessprofessor.com/programming/rcpp/install-rtools-for-rcpp/)
+[Windows][compiler-windows]
 guides.
 
 With a compiler in hand, one can then install the package from GitHub by:
@@ -201,7 +201,7 @@ Surfacing the _C++_ code with _Rcpp_ requires `Rcpp` to be listed under both
 `LinkingTo` (for the headers used at compile time) and `Imports` (so it is
 available at run time).
 
-```
+```default
 LinkingTo: 
     Rcpp
 Imports: 
@@ -211,3 +211,6 @@ Imports:
 ## License
 
 GPL (\>= 2)
+
+[compiler-macos]: http://thecoatlessprofessor.com/programming/r-compiler-tools-for-rcpp-on-os-x/
+[compiler-windows]: http://thecoatlessprofessor.com/programming/rcpp/install-rtools-for-rcpp/
