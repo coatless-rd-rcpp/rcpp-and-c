@@ -210,10 +210,12 @@ Surfacing the *C++* code with *Rcpp* requires `Rcpp` to be listed under
 both `LinkingTo` (for the headers used at compile time) and `Imports`
 (so it is available at run time).
 
-    LinkingTo:
-        Rcpp
-    Imports:
-        Rcpp (>= 1.0.12)
+``` default
+LinkingTo: 
+    Rcpp
+Imports: 
+    Rcpp (>= 1.0.12)
+```
 
 ## License
 
